@@ -14,12 +14,12 @@ A simple JSON parser built in TypeScript that converts JSON strings into an Abst
 #### Clone the Project
 
 ```bash
-git clone https://github.com/phiineas/jsonParser.git
+https://github.com/phiineas/JSON-Parser.git
 ```
 #### Navigate to the Project Directory
 
 ```bash
-cd jsonParser
+cd JSON-Parser
 ```
 
 #### Install Dependencies
@@ -40,7 +40,7 @@ npm run build
 npm test
 ```
 
-- You can add JSON test files in the data/tests directory and update the parser.test.ts to reflect your test cases.
+You can add JSON test files in the data/tests directory and update the parser.test.ts to reflect your test cases.
 
 ### Usage 
 
