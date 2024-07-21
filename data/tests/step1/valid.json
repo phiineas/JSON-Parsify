@@ -16,7 +16,15 @@
       "address": "529 Seacoast Terrace, Cucumber, Montana, 8875",
       "about": "Voluptate mollit id aliquip culpa magna tempor proident nisi non velit. Cillum duis sunt ea mollit consequat commodo Lorem dolor anim sunt consectetur esse do. Occaecat eu cillum in deserunt consectetur. Eu labore aliqua qui qui sunt dolor occaecat. Et est officia excepteur reprehenderit velit aliquip commodo qui in quis adipisicing est nisi. Mollit eu non laboris deserunt aute labore nisi quis nostrud in. Qui fugiat eu ea culpa incididunt ut labore nisi reprehenderit sit et eu occaecat incididunt.\r\n",
       "registered": "2021-04-02T12:13:08 -03:00",
-      "tags": ["ut", "esse", "elit", "laborum", "voluptate", "excepteur", "sunt"],
+      "tags": [
+        "ut",
+        "esse",
+        "elit",
+        "laborum",
+        "voluptate",
+        "excepteur",
+        "sunt"
+      ],
       "friends": [
         {
           "id": 0,
@@ -34,4 +42,5 @@
       "greeting": "Hello, Hardin Ellis! You have 1 unread messages.",
       "favoriteFruit": "apple"
     }
-  ]
+]
+  
