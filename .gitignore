@@ -22,8 +22,8 @@ build/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
-.eslintcache
-
 # Misc
 .DS_Store
+
+# Optional eslint cache
+.eslintcache
