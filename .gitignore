@@ -10,7 +10,7 @@ node_modules/
 coverage
 
 # Transpiled files
-dist/
+# dist/
 
 # VS Code
 .vscode
@@ -26,4 +26,3 @@ dist/
 .DS_Store
 
 # Optional eslint cache
-.eslintcache
