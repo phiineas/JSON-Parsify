@@ -44,17 +44,27 @@ You can add JSON test files in the data/tests directory and update the parser.te
 
 ### Usage 
 
-- Build the Project
-Ensure you have built the project using the following command:
+#### Running Locally
+
+- To run the JSON parser locally and see the parsed data:
+
+1. Ensure you have a JSON file located at data/tests/step1/valid.json. 
+
+2. Use the following command to start the application:
 
 ```bash
-npm run build
+npm run dev
 ```
-- Run the Parser
-You can use the parser by running the compiled main.js file. Ensure your JSON data is placed in the data directory.
+
+3. You will be prompted to enter the key you want to search for. Enter the key and press Enter. To exit the script, type exit and press Enter.
 
 ```bash
-node dist/main.js
+Enter the key to search for (or type "exit" to quit): 
+name
+name: Hardin Ellis
+Enter the key to search for (or type "exit" to quit): 
+age
+age: 30
 ```
 
 By default, this will read the JSON file located at data/tests/step1/valid.json. Modify the main.ts file to specify different paths or file names if needed.

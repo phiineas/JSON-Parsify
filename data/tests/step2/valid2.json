@@ -1,4 +1,7 @@
 {
-    "key": "value",
-    "key2": "value"
-}
+    "name": "John",
+    "age": 30,
+    "isStudent": false,
+    "courses": ["Math", "Science"]
+  }
+  

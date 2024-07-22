@@ -3,6 +3,7 @@ import * as path from 'path';
 import { tokenizer } from './tokenizer';
 import { parser } from './parser';
 import { Token, ASTNode } from './types';
+import * as readlineSync from 'readline-sync';
 
 const dataPath = path.join(__dirname, '..', 'data', 'tests', 'step1', 'valid.json');
 
@@ -15,18 +16,46 @@ const parseJSON = (jsonString: string): ASTNode => {
     return parser(tokens);
 };
 
+const findKeyInAST = (ast: ASTNode, key: string): any => {
+    const search = (node: ASTNode, key: string): any => {
+        if (node.type === 'Object') {
+            if (node.value[key]) {
+                return node.value[key];
+            }
+            for (const k in node.value) {
+                const result = search(node.value[k], key);
+                if (result) return result;
+            }
+        } else if (node.type === 'Array') {
+            for (const item of node.value) {
+                const result = search(item, key);
+                if (result) return result;
+            }
+        }
+        return null;
+    };
+    return search(ast, key);
+};
+
 const main = () => {
     try {
         const jsonString = readJSONFile(dataPath);
-        
         const ast = parseJSON(jsonString);
-        
-        console.log(JSON.stringify(ast, null, 2));
 
-        // const data = JSON.parse(jsonString);
-        // const ages = data.map((item: { age: number }) => item.age);
-        // console.log('Ages:', ages);
+        while (true) {
+            const key = readlineSync.question('Enter the key to search for (or type "exit" to quit): ');
+            if (key.toLowerCase() === 'exit') {
+                break;
+            }
 
+            const resultNode = findKeyInAST(ast, key);
+            
+            if (resultNode) {
+                console.log(`${key}:`, resultNode.value);
+            } else {
+                console.error(`Key "${key}" not found in the JSON data.`);
+            }
+        }
     } catch (error) {
         console.error('Error:', (error as Error).message);
     }
