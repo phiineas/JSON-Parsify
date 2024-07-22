@@ -16,6 +16,20 @@ const parseJSON = (jsonString: string): ASTNode => {
     return parser(tokens);
 };
 
+const extractValue = (node: ASTNode): any => {
+    if (node.type === 'Object') {
+        const result: Record<string, any> = {};
+        for (const key in node.value) {
+            result[key] = extractValue(node.value[key]);
+        }
+        return result;
+    } else if (node.type === 'Array') {
+        return node.value.map(extractValue);
+    } else {
+        return node.value;
+    }
+};
+
 const findKeyInAST = (ast: ASTNode, key: string): any => {
     const search = (node: ASTNode, key: string): any => {
         if (node.type === 'Object') {
@@ -34,7 +48,9 @@ const findKeyInAST = (ast: ASTNode, key: string): any => {
         }
         return null;
     };
-    return search(ast, key);
+
+    const result = search(ast, key);
+    return result ? extractValue(result) : null;
 };
 
 const main = () => {
@@ -49,9 +65,9 @@ const main = () => {
             }
 
             const resultNode = findKeyInAST(ast, key);
-            
+
             if (resultNode) {
-                console.log(`${key}:`, resultNode.value);
+                console.log(`${key}: ${JSON.stringify(resultNode, null, 2)}`);
             } else {
                 console.error(`Key "${key}" not found in the JSON data.`);
             }
