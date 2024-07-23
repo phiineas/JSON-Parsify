@@ -78,7 +78,7 @@ npm i json-parsify
 
 - Import the parser
 ```bash
-import { JSONParser } from 'json-parsify';
+import { JSONParsify } from 'json-parsify';
 ```
 
 - Parse a JSON string
