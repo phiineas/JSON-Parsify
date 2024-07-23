@@ -1,11 +1,27 @@
-node_modules
-dist
+# Dependency directories
+node_modules/
+
+# Production build files
+dist/
+
+# Logs
 *.log
+
+# TypeScript source files
 *.ts
-.jest
-.nyc_output
-coverage
-.git
+*.tsx
+
+# Testing frameworks
+.jest/
+.nyc_output/
+coverage/
+
+# Version control systems
+.git/
 .gitignore
+
+# Configuration files
 .npmignore
+
+# Documentation
 README.md
