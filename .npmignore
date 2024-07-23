@@ -11,6 +11,9 @@ dist/
 *.ts
 *.tsx
 
+## JavaScript build files
+*.js
+
 # Testing frameworks
 .jest/
 .nyc_output/
