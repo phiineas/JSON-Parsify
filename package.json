@@ -1,6 +1,6 @@
 {
   "name": "json-parsify",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple JSON parser built in TypeScript",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -16,7 +16,14 @@
     "type": "git",
     "url": "https://github.com/phiineas/json-parsify.git"
   },
-  "keywords": ["json", "parser", "typescript", "ast", "json-parser", "ts"],
+  "keywords": [
+    "json",
+    "parser",
+    "typescript",
+    "ast",
+    "json-parser",
+    "ts"
+  ],
   "author": "Jainil Patel",
   "license": "MIT",
   "devDependencies": {
