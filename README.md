@@ -14,12 +14,12 @@ A simple JSON parser built in TypeScript that converts JSON strings into an Abst
 #### Clone the Project
 
 ```bash
-https://github.com/phiineas/JSON-Parser.git
+https://github.com/phiineas/JSON-Parsify.git
 ```
 #### Navigate to the Project Directory
 
 ```bash
-cd JSON-Parser
+cd JSON-Parsify
 ```
 
 #### Install Dependencies
@@ -84,7 +84,7 @@ import { JSONParser } from 'json-parsify';
 - Parse a JSON string
 ```typescript
 const jsonString = '{"name": "Hardin Ellis", "age": 30}';
-const parser = new JSONParser();
+const parser = new JSONParsify();
 const ast = parser.parse(jsonString);
 console.log(ast);
 ```
@@ -92,7 +92,7 @@ console.log(ast);
 - Extract specific data
 ```typescript
 const jsonString = '{"name": "Hardin Ellis", "age": 30}';
-const parser = new JSONParser();
+const parser = new JSONParsify();
 const ast = parser.parse(jsonString);
 const name = parser.extract(ast, 'name');
 console.log(`name: ${name}`);

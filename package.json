@@ -1,6 +1,6 @@
 {
   "name": "json-parsify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple JSON parser built in TypeScript",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -8,13 +8,15 @@
     "build": "tsc",
     "start": "node dist/main.js",
     "dev": "nodemon --exec ts-node src/main.ts",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/phiineas/json-parser.git"
+    "url": "https://github.com/phiineas/json-parsify.git"
   },
-  "keywords": ["json", "parser", "typescript", "ast"],
+  "keywords": ["json", "parser", "typescript", "ast", "json-parser", "ts"],
   "author": "Jainil Patel",
   "license": "MIT",
   "devDependencies": {
@@ -24,7 +26,9 @@
     "nodemon": "^3.1.4",
     "ts-jest": "^29.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^4.0.0"
+    "typescript": "^4.0.0",
+    "eslint": "^8.0.0",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
