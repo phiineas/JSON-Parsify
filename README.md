@@ -68,3 +68,33 @@ age: 30
 ```
 
 By default, this will read the JSON file located at data/tests/step1/valid.json. Modify the main.ts file to specify different paths or file names if needed.
+
+### Use as a package
+
+To install the package, use the following command:
+```bash
+npm i @phiineas/json-parser
+```
+
+- Import the parser
+```bash
+import { JSONParser } from '@phiineas/json-parser';
+```
+
+- Parse a JSON string
+```typescript
+const jsonString = '{"name": "Hardin Ellis", "age": 30}';
+const parser = new JSONParser();
+const ast = parser.parse(jsonString);
+console.log(ast);
+```
+
+- Extract specific data
+```typescript
+const jsonString = '{"name": "Hardin Ellis", "age": 30}';
+const parser = new JSONParser();
+const ast = parser.parse(jsonString);
+const name = parser.extract(ast, 'name');
+console.log(`name: ${name}`);
+```
+

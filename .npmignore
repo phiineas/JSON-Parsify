@@ -1,0 +1,10 @@
+node_modules
+src
+*.log
+*.ts
+.jest
+.nyc_output
+coverage
+.git
+.gitignore
+.npmignore
