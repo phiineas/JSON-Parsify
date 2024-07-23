@@ -10,5 +10,8 @@
       "forceConsistentCasingInFileNames": true,
       "declaration": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+  "include": [
+    "src/**/*",
+    "types/**/*"
+  ]
 }
