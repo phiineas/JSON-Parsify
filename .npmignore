@@ -1,5 +1,5 @@
 node_modules
-src
+dist
 *.log
 *.ts
 .jest
@@ -8,3 +8,4 @@ coverage
 .git
 .gitignore
 .npmignore
+README.md
