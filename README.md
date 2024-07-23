@@ -73,12 +73,12 @@ By default, this will read the JSON file located at data/tests/step1/valid.json.
 
 To install the package, use the following command:
 ```bash
-npm i @phiineas/json-parser
+npm i json-parsify
 ```
 
 - Import the parser
 ```bash
-import { JSONParser } from '@phiineas/json-parser';
+import { JSONParser } from 'json-parsify';
 ```
 
 - Parse a JSON string

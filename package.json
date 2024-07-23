@@ -1,5 +1,5 @@
 {
-  "name": "@phiineas/json-parser",
+  "name": "json-parsify",
   "version": "1.0.0",
   "description": "A simple JSON parser built in TypeScript",
   "main": "dist/main.js",
