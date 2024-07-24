@@ -1,8 +1,8 @@
 {
   "name": "phiineas-json-parsify",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple JSON parser built in TypeScript",
-  "main": "dist/JSONParsify.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/main.js",
