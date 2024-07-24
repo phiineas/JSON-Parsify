@@ -1,18 +1,12 @@
 # Dependency directories
 node_modules/
 
-# Production build files
-dist/
-
 # Logs
 *.log
 
 # TypeScript source files
 *.ts
 *.tsx
-
-## JavaScript build files
-*.js
 
 # Testing frameworks
 .jest/
