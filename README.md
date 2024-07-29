@@ -69,7 +69,7 @@ age: 30
 
 By default, this will read the JSON file located at data/tests/step1/valid.json. Modify the main.ts file to specify different paths or file names if needed.
 
-### Use as a package
+<!-- ### Use as a package
 
 To install the package, use the following command:
 ```bash
@@ -97,4 +97,4 @@ const ast = parser.parse(jsonString);
 const name = parser.extract(ast, 'name');
 console.log(`name: ${name}`);
 ```
-
+ -->

@@ -27,3 +27,6 @@ dist/
 
 # Optional eslint cache
 .eslintcache
+
+# Declaration files
+*.d.ts
